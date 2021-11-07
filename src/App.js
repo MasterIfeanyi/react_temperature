@@ -1,5 +1,4 @@
 import Header from './components/Header'
-// import Input from './components/Input'
 import SlideShow from './components/SlideShow'
 
 import {useState, useEffect} from 'react'
@@ -43,12 +42,7 @@ const App = () => {
         loadByBreed={loadByBreed}
         setBreedName={setBreedName}
       />
-      {/* <Input
-        nameOfBreeds={nameOfBreeds}
-        setNameofBreds={setNameOfBreeds}
-        loadByBreed={loadByBreed}
-        setBreedName={setBreedName}
-      /> */}
+
       <SlideShow
         breedName={breedName}
         imagesOfABreed={imagesOfABreed}

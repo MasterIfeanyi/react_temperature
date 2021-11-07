@@ -7,7 +7,7 @@ import Container from 'react-bootstrap/Container'
 const SlideShow = ({ imagesOfABreed, breedName }) => {
 return (
     <Container>
-    <Row noGutters xs={1} md={3} lg={3} className="g-4">
+    <Row xs={1} md={3} className="g-4">
    
             {imagesOfABreed.map((image, index) => {
         return (
