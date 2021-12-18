@@ -1,3 +1,6 @@
 ## Check out the website,
-#### click the link below
-https://nostalgic-mccarthy-49260d.netlify.app/
+
+Open [Ifeanyi-temperature-app](https://ifeanyi-temp-converter.netlify.app/) to view it in the browser.
+
+
+
