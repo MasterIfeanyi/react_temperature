@@ -119,74 +119,78 @@ const Content = () => {
 
 
   
-    return (
-      <section className="p-2">
-        <div className="container">
-          <div className="input-group input-group-lg mb-3">
-  
-            <input
-              className="form-control"
-              type="number"
-              placeholder="Enter Temperature"
-              value={temperature}
-              onChange={(e) => setTemperature(e.target.value)}
-            />
-          </div>
-
-          <div className="d-flex align-items-center justify-content-between mb-3">
-            <div className="input-group">
-              <label
-                htmlFor=""
-                className="input-group-text"
-              >
-                From
-              </label>
-              <select onChange={(e) => setFirstUnit(e.target.value)}
-                className="form-select" id="inputGroupSelect01">
-                <option value="">
-                  Choose
-                </option>
-                <option>fahrenheit</option>
-                <option>celsius</option>
-                <option>kelvin</option>
-              </select>
+  return (
+    <section className="section">
+      <div className="container">
+        <div className="row">
+          <div className="col-12 mt-5">
+            <div className="input-group input-group-lg mb-3">
+              <input
+                className="form-control"
+                type="number"
+                placeholder="Enter Temperature"
+                value={temperature}
+                onChange={(e) => setTemperature(e.target.value)}
+              />
             </div>
 
-            <div className="input-group">
-              <label
-                htmlFor=""
-                className="input-group-text"
-              >
-                To
-              </label>
-              <select onChange={(e) => setSecondUnit(e.target.value)} className="form-select" id="inputGroupSelect01">
-                <option value="">
-                  Choose
-                </option>
-                <option>fahrenheit</option>
-                <option>celsius</option>
-                <option>kelvin</option>
-              </select>
-            </div>
-          </div>
-        
+            <div className="d-flex align-items-center justify-content-between mb-3">
+              <div className="input-group">
+                <label
+                  htmlFor=""
+                  className="input-group-text"
+                >
+                  From
+                </label>
+                <select onChange={(e) => setFirstUnit(e.target.value)}
+                  className="form-select" id="inputGroupSelect01">
+                  <option value="">
+                    Choose
+                  </option>
+                  <option>fahrenheit</option>
+                  <option>celsius</option>
+                  <option>kelvin</option>
+                </select>
+              </div>
 
-        <div className="input-group input-group-lg mb-3 me-auto">
-  
-          <input
-            className="form-control"
-            type="number"
-            placeholder="Answer"
-            value={answer}
-            readOnly
-          />
+              <div className="input-group">
+                <label
+                  htmlFor=""
+                  className="input-group-text"
+                >
+                  To
+                </label>
+                <select onChange={(e) => setSecondUnit(e.target.value)} className="form-select" id="inputGroupSelect01">
+                  <option value="">
+                    Choose
+                  </option>
+                  <option>fahrenheit</option>
+                  <option>celsius</option>
+                  <option>kelvin</option>
+                </select>
+              </div>
+            </div>
+
+
+            <div className="input-group input-group-lg mb-3 me-auto">
+              <input
+                className="form-control"
+                type="number"
+                placeholder="Answer"
+                value={answer}
+                readOnly
+              />
+            </div>
+            <div className="text-center">
+              <button type="button" onClick={() => handleSubmit(firstUnit, secondUnit)} className="btn btn-danger">
+                Submit
+              </button>
+            </div>            
+          </div>         
         </div>
       </div>
-        <button type="button" onClick={() => handleSubmit(firstUnit, secondUnit)} className="btn btn-danger">
-          Submit
-        </button>
-      </section>
-    );
+    </section>
+  );
 }
 
 export default Content

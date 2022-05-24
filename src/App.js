@@ -6,11 +6,11 @@ const App = () => {
 
 
   return (
-    <div className="App">
+    <main className="App">
       <Header />
       <Content />
       <Footer />
-    </div>
+    </main>
   )
 }
 
