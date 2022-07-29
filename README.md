@@ -2,7 +2,7 @@
 
 ## Description
 
-This is a simple web app that allows a user to take down notes and store it in HTML local storage.
+This is a simple web app that allows a user to convert between temperatures of different units.
 
 ## React
 
